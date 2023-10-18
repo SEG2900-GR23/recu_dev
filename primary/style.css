@@ -1,0 +1,78 @@
+/* Color Constants */
+:root {
+  --main-color-1: #6096b4;
+  --main-color-2: #93bfcf;
+  --main-color-3: #bdcdd6;
+  --text-color: #6096b4;
+  --background-color: #eee9da;
+  --accent-color: #f69e7b;
+  --hover-accent-color: #d2e9e9;
+  --hover-accent-text-color: #54259;
+}
+
+/* Typography Constants */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+/* Body Styles */
+body {
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  display: flex;
+  margin: 0;
+}
+
+/* Title Styles */
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Paragraph Styles */
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Subparagraph Styles */
+.subparagraph {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.horizonal_nav_bar {
+  display: flex;
+  justify-content: left; /* for horizontal alignment */
+  align-items: left; /* for vertical alignment */
+  width: 100px;
+  height: 100vh; /* 100% of the viewport height */
+  background-color: black;
+}
+
+.main_data {
+  display: flex;
+  justify-content: left; /* for horizontal alignment */
+  align-items: left; /* for vertical alignment */
+  flex: 1;
+  background-color: blue;
+}
+
+#features {
+  display: flex;
+  padding-top: 50px;
+  flex: 1;
+  background-color: purple;
+}
+
+/* Accent Styles */
+.accent {
+  color: var(--accent-color);
+}
+
+/* Hover Styles */
+.hover-accent {
+  color: var(--hover-accent-text-color);
+}
+
+.hover-accent:hover {
+  background-color: var(--hover-accent-color);
+}
