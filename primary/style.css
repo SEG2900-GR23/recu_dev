@@ -19,70 +19,10 @@
 body {
   font-family: "Raleway", sans-serif;
   color: var(--text-color);
-  background-color: var(--background-color);
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  margin-left: 5rem;
-}
-
-.material-symbols-outlined::before {
-  font-family: "Material Icons";
-  font-size: 24px;
-  content: attr(data-icon); /* Pull the icon name from a data attribute */
-}
-
-.navigation {
-  width: 9rem;
-  height: 100vh;
-  color: --accent-color;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-buttons {
-  width: 5rem;
-  height: 5rem;
-  padding: 20;
-  margin-top: 2rem;
-  background-color: var(--main-color-2);
-  border-radius: 30%;
-  border-color: var(--main-color-3);
-  border-width: 0.25rem;
-}
-
-#feature-icon {
-  font-size: 2.5rem;
-}
-
-.features,
-.account_options {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: var(--accent-color);
-  size: 100px;
-  padding: 1rem;
-}
-
-.account_options {
-  padding-top: 7rem;
-}
-
-.account_options {
-  margin-top: auto;
-}
-
-.nav_link {
   display: flex;
-  align-items: center;
-  height: 5rem;
-  text-decoration: none;
-  color: var(--main-color-1);
+  margin: 0;
+  padding: 0;
 }
 
 /* Title Styles */
@@ -112,4 +52,78 @@ p {
 
 .hover-accent:hover {
   background-color: var(--hover-accent-color);
+}
+
+/* ALL CSS FOR USER WEB APP */
+.navigation {
+  width: 9rem;
+  height: 100vh;
+  color: --accent-color;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-buttons {
+  width: 5rem;
+  height: 5rem;
+  padding: 20;
+  margin-top: 1.25rem;
+  background-color: var(--main-color-2);
+  border-radius: 30%;
+  border-color: lightblue;
+  border-width: 0.25rem;
+}
+
+#feature-icon {
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+.features,
+.account_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightcoral;
+  size: 100px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1.5rem;
+}
+
+.analytical-widgets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightcoral;
+  size: 100px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1.5rem;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color-2);
+  size: 100px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1.5rem;
+}
+
+.widget-name,
+.widget-detailed-hyperlink {
+  display: inline-block;
+}
+
+.widget-name {
+}
+
+.widget-detailed-data {
+}
+
+.widget-data {
 }
