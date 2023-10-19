@@ -22,6 +22,47 @@ body {
   background-color: var(--background-color);
   display: flex;
   margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-left: 5rem;
+}
+
+.material-symbols-outlined::before {
+  font-family: "Material Icons";
+  font-size: 24px;
+  content: attr(data-icon); /* Pull the icon name from a data attribute */
+}
+
+.navigation {
+  width: 5rem;
+  height: 100vh;
+  color: --accent-color;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features,
+.account_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--accent-color);
+  size: 100px;
+}
+
+.account_options {
+  margin-top: auto;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  text-decoration: none;
+  color: var(--main-color-1);
 }
 
 /* Title Styles */
@@ -37,30 +78,6 @@ p {
 /* Subparagraph Styles */
 .subparagraph {
   font-family: "JetBrains Mono", monospace;
-}
-
-.horizonal_nav_bar {
-  display: flex;
-  justify-content: left; /* for horizontal alignment */
-  align-items: left; /* for vertical alignment */
-  width: 100px;
-  height: 100vh; /* 100% of the viewport height */
-  background-color: black;
-}
-
-.main_data {
-  display: flex;
-  justify-content: left; /* for horizontal alignment */
-  align-items: left; /* for vertical alignment */
-  flex: 1;
-  background-color: blue;
-}
-
-#features {
-  display: flex;
-  padding-top: 50px;
-  flex: 1;
-  background-color: purple;
 }
 
 /* Accent Styles */
