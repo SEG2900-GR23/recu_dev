@@ -36,12 +36,27 @@ main {
 }
 
 .navigation {
-  width: 5rem;
+  width: 9rem;
   height: 100vh;
   color: --accent-color;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.nav-buttons {
+  width: 5rem;
+  height: 5rem;
+  padding: 20;
+  margin-top: 2rem;
+  background-color: var(--main-color-2);
+  border-radius: 30%;
+  border-color: var(--main-color-3);
+  border-width: 0.25rem;
+}
+
+#feature-icon {
+  font-size: 2.5rem;
 }
 
 .features,
@@ -51,6 +66,11 @@ main {
   align-items: center;
   background-color: var(--accent-color);
   size: 100px;
+  padding: 1rem;
+}
+
+.account_options {
+  padding-top: 7rem;
 }
 
 .account_options {
