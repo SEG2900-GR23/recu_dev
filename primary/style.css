@@ -94,7 +94,7 @@ p {
 
 .analytical-widgets {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   background-color: lightcoral;
   size: 100px;
@@ -115,15 +115,15 @@ p {
 }
 
 .widget-name,
-.widget-detailed-hyperlink {
-  display: inline-block;
+.widget-advanced-view-button {
+  background-color: aliceblue;
+  border-radius: 0.65rem;
+  padding: 0.5rem;
 }
 
-.widget-name {
-}
-
-.widget-detailed-data {
-}
-
-.widget-data {
+.widget-graphic {
+  size: 100px;
+  width: 18rem;
+  height: 2rem + width;
+  border-radius: 1.5rem;
 }
