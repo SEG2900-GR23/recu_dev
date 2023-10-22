@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Team</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #logo {
+            max-width: 100px;
+            height: auto;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 5px 10px;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .team-member {
+            width: 30%;
+            text-align: center;
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            max-width: 100px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="header">
+        <img id="logo" src="logo.png" alt="Company Logo">
+        <div id="buttons">
+            <button class="button">Button 1</button>
+            <button class="button">Button 2</button>
+            <button class="button">Button 3</button>
+            <button class="button">Button 4</button>
+            <button class="button">Button 5</button>
+            <button class="button">Button 6</button>
+        </div>
+    </div>
+
+    <h1>Meet Our Team</h1>
+    <h2>Get to know the amazing people behind our success</h2>
+
+    <div class="team">
+        <div class="team-member">
+            <img src="team-member1.jpg" alt="Team Member 1">
+            <h2>Member 1</h2>
+            <p>Email: memb1@example.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member2.jpg" alt="Team Member 2">
+            <h2>Member 2</h2>
+            <p>Email: memb2@example.com</p>
+            <p>Phone: +1 (234) 567-8901</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member3.jpg" alt="Team Member 3">
+            <h2>Member 3</h2>
+            <p>Email: memb3@example.com</p>
+            <p>Phone: +1 (345) 678-9012</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member4.jpg" alt="Team Member 4">
+            <h2>Member 4</h2>
+            <p>Email: memb4@example.com</p>
+            <p>Phone: +1 (456) 789-0123</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member5.jpg" alt="Team Member 5">
+            <h2>Member 5</h2>
+            <p>Email: memb5@example.com</p>
+            <p>Phone: +1 (567) 890-1234</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member6.jpg" alt="Team Member 6">
+            <h2>Member 6</h2>
+            <p>Email: memb6@example.com</p>
+            <p>Phone: +1 (678) 901-2345</p>
+        </div>
+    </div>
 </body>
 </html>
