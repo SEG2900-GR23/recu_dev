@@ -92,7 +92,8 @@ p {
   border-radius: 1.5rem;
 }
 
-.analytical-widgets {
+.analytical-widgets,
+.receipt-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -103,9 +104,11 @@ p {
   border-radius: 1.5rem;
 }
 
-.widget {
+.widget,
+.receipt-token {
   display: flex;
-  flex-direction: column;
+  flex-direction: rows;
+  flex-wrap: wrap;
   align-items: center;
   background-color: var(--main-color-2);
   size: 100px;
