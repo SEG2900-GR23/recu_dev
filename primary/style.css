@@ -199,7 +199,6 @@ p {
 }
 
 /* ALL CSS FOR SOLUTIONS PAGE */
-
 .business-plans {
   display: flex;
 }
@@ -281,3 +280,5 @@ p {
   outline: none;
   background-color: #0d0d0d;
 }
+
+/* ALL CSS FOR FEATURES ALT PAGE */
