@@ -154,43 +154,40 @@ p {
 }
 
 /* ALL CSS FOR TEAMS PAGE */
-#header {
+.full-team-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  flex-flow: row;
 }
 
-#logo {
-  max-width: 100px;
-  height: auto;
+.member {
+  margin: 1rem;
+  background-color: #d2e9e9;
+  border-radius: 10px 50px;
+  padding: 1rem;
 }
 
-#buttons {
+.pfp {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 20%;
+  margin: 1rem;
+}
+
+.social-media-list {
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+  flex-flow: row;
+  padding-left: 1rem;
 }
 
-.button {
-  padding: 5px 10px;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.biography {
+  align-self: center;
+  padding-left: 4rem;
 }
 
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.team-member {
-  width: 30%;
-  text-align: center;
-  margin: 10px;
-  padding: 15px;
+.social-media {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
 }
 
 .team-member img {
