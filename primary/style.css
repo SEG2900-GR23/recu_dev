@@ -160,6 +160,7 @@ p {
 }
 
 .member {
+  align-self: auto;
   margin: 1rem;
   background-color: #d2e9e9;
   border-radius: 10px 50px;
