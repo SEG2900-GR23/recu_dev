@@ -280,3 +280,39 @@ p {
 }
 
 /* ALL CSS FOR FEATURES ALT PAGE */
+
+/* ALL CSS FOR NAV BAR */
+
+.globalNavBar {
+  display: flex;
+  align-self: center;
+  width: fit-content;
+  padding: 1rem;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15),
+    0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  padding: 0.75rem;
+  border-radius: 99px;
+  gap: 1rem;
+}
+
+.pageMarker {
+  display: flex;
+  height: 1rem;
+  width: 10rem;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  padding-top: font-size + 1rem;
+}
+
+.selectedPage {
+  background-color: grey;
+  border-radius: 10px;
+}
