@@ -203,6 +203,23 @@ p {
   max-width: 100px;
 }
 
+.globalNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.pages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#logo-redirect {
+  margin-right: auto; /* Push the logo to the left */
+}
+
 /* ==================================================================================================================== */
 /* ALL CSS FOR SOLUTIONS PAGE */
 .business-plans {
