@@ -220,6 +220,17 @@ p {
   margin-right: auto; /* Push the logo to the left */
 }
 
+.full-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.member {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
 /* ==================================================================================================================== */
 /* ALL CSS FOR SOLUTIONS PAGE */
 .business-plans {
