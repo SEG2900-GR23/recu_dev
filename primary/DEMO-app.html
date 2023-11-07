@@ -3,109 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Link to CSS file -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    
-    <!-- Link to TAILWIND CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Google Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 </head>
-<body>
-
-    <div class="globalNavBar">
-        <div class="pages">
-            
-            <button class="pageMarker" id="logo-redirect"><img src="primary/assets/company-logo.jpg" alt="company-logo"></button>
-
-            <button class="pageMarker" id="home-page-redirect">HOME</button>
-
-            <button class="pageMarker" id="about-page-redirect">ABOUT</button>
-
-            <button class="pageMarker" id="solutions-page-redirect">SOLUTIONS</button>
-
-            <button class="pageMarker" id="demo-page-redirect">OUR PRODUCT</button>
-
-            <button class="pageMarker" id="login-page-redirect">SIGN UP</button>
-
+<body class="overflow-x-hidden">
+    <div class="min-w-0">
+        <div class="globalNavBar">
+            <div class="pages flex justify-between">
+                <button class="pageMarker" id="logo-redirect">
+                    <img class="h-10" src="primary/assets/company-logo.jpg" alt="company-logo">
+                </button>
+                <button class="pageMarker" id="home-page-redirect">HOME</button>
+                <button class="pageMarker" id="about-page-redirect">ABOUT</button>
+                <button class="pageMarker" id="solutions-page-redirect">SOLUTIONS</button>
+                <button class="pageMarker" id="demo-page-redirect">OUR PRODUCT</button>
+                <button class="pageMarker" id="login-page-redirect">SIGN UP</button>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-between">
+            <div class="features-desc w-full md:w-1/2">
+                <!-- Feature 1 -->
+                <div class="features flex flex-row items-center mb-4">
+                    <div class="widget">
+                        <h1 class="widget-name">Feature 1</h1>
+                        <button class="widget-advanced-view-button" id="button-feature1" onclick="changeImage('assets/feature1.png')">Click to View</button>
+                    </div>
+                    <p class="align-self-center">Feature Description</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="features flex flex-row items-center mb-4">
+                    <div class="widget">
+                        <h1 class="widget-name">Feature 2</h1>
+                        <button class="widget-advanced-view-button" id="button-feature2" onclick="changeImage('assets/feature2.png')">Click to View</button>
+                    </div>
+                    <p class="align-self-center">Feature Description</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="features flex flex-row items-center mb-4">
+                    <div class="widget">
+                        <h1 class="widget-name">Feature 3</h1>
+                        <button class="widget-advanced-view-button" id="button-feature3" onclick="changeImage('assets/feature3.png')">Click to View</button>
+                    </div>
+                    <p class="align-self-center">Feature Description</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="features flex flex-row items-center">
+                    <div class="widget">
+                        <h1 class="widget-name">Feature 4</h1>
+                        <button class="widget-advanced-view-button" id="button-feature4" onclick="changeImage('assets/feature4.png')">Click to View</button>
+                    </div>
+                    <p class="align-self-center">Feature Description</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img id="feature-image" class="w-full max-h-screen object-contain" style="border-radius: 10ch;" src="assets/feature.png" alt="feature-1">
+            </div>
         </div>
     </div>
 
-    <div class="fearures-desc">
-        <ul class="features" style="flex-direction: row;">
-            <li class="widget">
-                <h1 class="widget-name">Feature 1</h1>
-                <button class="widget-advanced-view-button">Click to View</button>
-            </li>
-            <p style="align-self:center;">Feature Description</p>
-        </ul>
-        <ul class="features" style="flex-direction: row;">
-            <li class="widget">
-            </li>
-            <li class="widget">
-            </li>
-            <li class="widget">
-                <h1 class="widget-name">Feature 2</h1>
-                <button class="widget-advanced-view-button">Click to View</button>
-            </li>
-            <p style="align-self:center;">Feature Description</p>
-        </ul>
-        <ul class="features" style="flex-direction: row;">
-            <li class="widget">
-            </li>
-            <li class="widget">
-            </li>
-            <li class="widget">
-            </li>
-            <li class="widget">
-            </li>
-            <li class="widget">
-                <h1 class="widget-name">Feature 3</h1>
-                <button class="widget-advanced-view-button">Click to View</button>
-            </li>
-            <p style="align-self:center;">Feature Description</p>
-        </ul>
-        <ul class="features" style="flex-direction: row;">
-            <li class="widget">
-            </li>
-            <li class="widget">
-            </li>
-            <li class="widget">
-            </li>
-            <li class="widget">
-            </li>
-            <li class="widget">
-            </li>
-            <li class="widget">
-            </li>
-            <li class="widget">
-                <h1 class="widget-name">Feature 4</h1>
-                <button class="widget-advanced-view-button">Click to View</button>
-            </li>
-            <p style="align-self:center;">Feature Description</p>
-        </ul>
-    </div>
-    <div>
-        
-        <ul >
-            <li >
-                    
-                <img style="object-fit: contain;"  src="assets/feature.png" alt="feature-1" >
-            </li>
-                
-        </ul>
-        
-    </div>
-
-    <!-- Link to Javascript -->
+    <script>
+        function changeImage(newImageSrc) {
+            document.getElementById('feature-image').src = newImageSrc;
+        }
+        </script>
+        <script src="main.js"></script>
     <script src="main.js"></script>
-
 </body>
 </html>
