@@ -56,7 +56,36 @@ p {
 
 /* ==================================================================================================================== */
 /* ALL CSS FOR HOME PAGE */
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #98ff98, #ffffff);
+}
 
+header {
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-left: 2rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  border-radius: 2rem;
+}
+
+.logo_redirect {
+  padding-right: 1rem;
+}
+
+#logo {
+  size: 100%;
+}
+
+.nav_bar,
+.footer_details {
+  display: flex;
+  align-items: row;
+  gap: 2rem;
+}
 
 /* ==================================================================================================================== */
 /* ALL CSS FOR USER WEB APP */
