@@ -18,7 +18,7 @@
         --accent-color-cyan: #31C5F0; /* Cyan color for accents */
         --accent-color-red: rgb(221, 0, 92); /* Red color for accents */
         --gradient-light: #8BD3E6; /* Lighter blue for gradient */
-        --gradient-dark: #073B4C; /* Darker blue for gradient */
+        --gradient-dark: #022430; /* Darker blue for gradient */
         --hover-background-color: #256D85; /* Hover state background color */
         --hover-text-color: #D8FFFF; /* Hover state text color */
         --link-text-color: #2A9D8F; /* Link text color, a greenish shade */
@@ -39,7 +39,11 @@
             background: linear-gradient(to bottom, var(-accent-color-cyan), var(--card-background-end));
         }
 
-        header {
+        .landing_page_body li {        
+            display: flex;
+        }
+
+        .header {
             position: absolute;
             top: 0;
             left: 0;
@@ -51,7 +55,7 @@
             z-index: 1000;
         }
 
-        footer {
+        .footer {
 
             padding: 30px 100px;
             display: flex;
@@ -63,18 +67,18 @@
             
         }
 
-        header ul, footer ul {
+        .header ul, .footer ul {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        header ul li, footer ul li{
+        .header ul li, .footer ul li{
             list-style: none;
             margin-left: 20px;
         }
 
-        header ul li a, footer ul li a{
+        .header ul li a, .footer ul li a{
             text-decoration: none;
             padding: 6px 15px;
             color: var(--card-background-end);
@@ -82,25 +86,25 @@
             border-radius: 20px;
         }
 
-        header ul li a:hover{
+        .header ul li a:hover{
             background-color: var(--accent-color-red);
             color: var(--card-background-end);
             transition: 100ms ease-in;
         }
 
-        header ul li a.active{
+        .header ul li a.active{
             background-color: var(--accent-color-red);
             color: var(--card-background-end);
         }
 
         #logo {
-            width: 50px; 
+            width: 80px; 
             height: auto; 
             border-radius: 25px;
         }
 
 
-        header .nav_bar {
+        .header .nav_bar {
             display: flex;
             background: var(--hover-background-color);
             border-radius: 20px;
@@ -108,7 +112,7 @@
             margin-left: auto;
         }
 
-        footer .footer_details {
+        .footer .footer_details {
             display: flex;
             background: var(--hover-background-color);
             border-radius: 20px;
@@ -190,17 +194,27 @@
             object-fit: cover; /* This will cover the area without stretching the image */
         }
 
+        .content_resume{
+            width: 100vw -2rem;
+            width: auto;
+            background:black;
+            border-radius: 20px;
+        }
+
+        .content_resume p {
+            color: whitesmoke;
+        }
+
     </style>
 
 </head>
 <body>
-
-    <header>
-        <ul class="nav_bar">
+    <ul class="landing_page_body">
+        <li class="header">
             <a href="homepage.html">
                 <img src="assets/RECEIPTIFY-LOGO.png" alt="RECEIPTIFY-LOGO" id="logo">
-            </a>
-            <li>
+            </a>    
+            <ul class="nav_bar">
                 <ul>
                     <li><a href="homepage.html" class="active">HOME</a></li>
                     <li><a href="ABOUT-central.html">ABOUT PAGE</a></li>
@@ -208,133 +222,134 @@
                     <li><a href="DEMO-app.html">APP DEMO PAGE</a></li>
                     <li><a href="WEB-APP-log-in-page.html">LOGIN/SIGNUP</a></li>
                 </ul>
-            </li>
-        </ul>
-    </header>
-    
-    <section class="homepage_content">
-        <div class="greeting">
-            <img src="assets/landing_page_greeting_backdrop.png" alt="landing_page_greeting_backdrop" id="landing_page_greeting_backdrop">
-        </div>
-        <ul>
-            <li class="who_are_we">
-                <div>
-
+            </ul>
+        </li>
+        <li>
+            <div class="homepage_content">
+                <div class="greeting">
+                    <img src="assets/landing_page_greeting_backdrop.png" alt="landing_page_greeting_backdrop" id="landing_page_greeting_backdrop">
                 </div>
-            </li>
-            <li class="values">
-                <div>
-
-                </div>
-            </li>
-            <li class="our_product">
-                <div>
-
-                </div>
-            </li>
-            <li class="business_solutions">
-                <div>
-
-                </div>
-            </li>
-            <li class="sign_up">
-                <div>
-
-                </div>
-            </li>
-            <li class="faq">
-                <div>
-
-                </div>
-            </li>
-            <li class="who_are_we">
-                <div>
-
-                </div>
-            </li>
-            <li class="who_are_we">
-                <div>
-
-                </div>
-            </li>
-            <li class="who_are_we">
-                <div>
-
-                </div>
-            </li>
-        </ul>
-    </section>
-    
-    <footer>
-        <ul class="footer_details">
-            <li>
-                <div class="footer_element_">
-                    <div class="footer_element_content">
-                        <div class="footer_element_card">
-                            <img src="assets/faq_graphic.png" alt="" class="footer_graphic" >
-                            <a class="footer_element_cta" href="">FAQ</a>
+                <ul class="content_resume">
+                    <li class="who_are_we">
+                        <div>
+                            <p>LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET</p>
                         </div>
-                        <div class="footer_element_overlay"></div>
-                    </div>
-                </div>     
-            </li>
-            <li>
-                <div class="footer_element_">
-                    <div class="footer_element_content">
-                        <div class="footer_element_card">
-                            <img src="assets/contact_us_graphic.png" alt="" class="footer_graphic" >
-                            <a class="footer_element_cta" href="">CONTACT US</a>
+                    </li>
+                    <li class="values">
+                        <div>
+                            <p>LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET LOREM IPSUM DOLOR SIT AMET</p>
                         </div>
-                        <div class="footer_element_overlay"></div>
-                    </div>
-                </div>     
-            </li>
-            <li>
-                <div class="footer_element_">
-                    <div class="footer_element_content">
-                        <div class="footer_element_card">
-                            <img src="assets/meet_the_team_graphic.png" alt="" class="footer_graphic">
-                            <a class="footer_element_cta" href="">MEET THE TEAM</a>
+                    </li>
+                    <li class="our_product">
+                        <div>
+        
                         </div>
-                        <div class="footer_element_overlay"></div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="footer_element_">
-                    <div class="footer_element_content">
-                        <div class="footer_element_card">
-                            <img src="assets/test_our_product_graphic.png" alt="" class="footer_graphic">
-                            <a class="footer_element_cta" href="">PRODUCT DEMO</a>
+                    </li>
+                    <li class="business_solutions">
+                        <div>
+        
                         </div>
-                        <div class="footer_element_overlay"></div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="footer_element_">
-                    <div class="footer_element_content">
-                        <div class="footer_element_card">
-                            <img src="assets/our_solutions_graphic.png" alt="" class="footer_graphic">
-                            <a class="footer_element_cta" href="">OUR SOLUTIONS</a>
+                    </li>
+                    <li class="sign_up">
+                        <div>
+        
                         </div>
-                        <div class="footer_element_overlay"></div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="footer_element_">
-                    <div class="footer_element_content">
-                        <div class="footer_element_card">
-                            <img src="assets/legal_graphic.png" alt="" class="footer_graphic">
-                            <a class="footer_element_cta" href="#basic">LEGAL</a>
+                    </li>
+                    <li class="faq">
+                        <div>
+        
                         </div>
-                        <div class="footer_element_overlay"></div>
+                    </li>
+                    <li class="who_are_we">
+                        <div>
+        
+                        </div>
+                    </li>
+                    <li class="who_are_we">
+                        <div>
+        
+                        </div>
+                    </li>
+                    <li class="who_are_we">
+                        <div>
+        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="footer">
+            
+            <ul class="footer_details">
+                <li>
+                    <div class="footer_element_">
+                        <div class="footer_element_content">
+                            <div class="footer_element_card">
+                                <img src="assets/faq_graphic.png" alt="" class="footer_graphic" >
+                                <a class="footer_element_cta" href="">FAQ</a>
+                            </div>
+                            <div class="footer_element_overlay"></div>
+                        </div>
+                    </div>     
+                </li>
+                <li>
+                    <div class="footer_element_">
+                        <div class="footer_element_content">
+                            <div class="footer_element_card">
+                                <img src="assets/contact_us_graphic.png" alt="" class="footer_graphic" >
+                                <a class="footer_element_cta" href="">CONTACT US</a>
+                            </div>
+                            <div class="footer_element_overlay"></div>
+                        </div>
+                    </div>     
+                </li>
+                <li>
+                    <div class="footer_element_">
+                        <div class="footer_element_content">
+                            <div class="footer_element_card">
+                                <img src="assets/meet_the_team_graphic.png" alt="" class="footer_graphic">
+                                <a class="footer_element_cta" href="">MEET THE TEAM</a>
+                            </div>
+                            <div class="footer_element_overlay"></div>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </footer>
+                </li>
+                <li>
+                    <div class="footer_element_">
+                        <div class="footer_element_content">
+                            <div class="footer_element_card">
+                                <img src="assets/test_our_product_graphic.png" alt="" class="footer_graphic">
+                                <a class="footer_element_cta" href="">PRODUCT DEMO</a>
+                            </div>
+                            <div class="footer_element_overlay"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer_element_">
+                        <div class="footer_element_content">
+                            <div class="footer_element_card">
+                                <img src="assets/our_solutions_graphic.png" alt="" class="footer_graphic">
+                                <a class="footer_element_cta" href="">OUR SOLUTIONS</a>
+                            </div>
+                            <div class="footer_element_overlay"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer_element_">
+                        <div class="footer_element_content">
+                            <div class="footer_element_card">
+                                <img src="assets/legal_graphic.png" alt="" class="footer_graphic">
+                                <a class="footer_element_cta" href="#basic">LEGAL</a>
+                            </div>
+                            <div class="footer_element_overlay"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
     
     <!-- Link to Javascript -->
     <script src="main.js"></script>
