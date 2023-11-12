@@ -134,6 +134,67 @@
             border: 5px solid purple;
         }
 
+        .header_nav_bar_horizontal {
+            padding: 2rem;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 30px 100px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: white;
+            font-weight: 600;
+            border-radius: 10px;
+            font-size: 1.25rem;
+        }
+
+        .header ul li a:hover{
+            background-color: rgb(255, 80, 118);
+            color: white;
+            transition: 100ms ease-in;
+        }
+
+        .header ul li a.active{
+            background-color: white;
+            color: rgb(255, 80, 118);
+        }
+
+        .header .nav_bar {
+            display: flex;
+            background: rgb(78, 73, 206);
+            border-radius: 20px;
+            padding: 1rem 2rem 1rem 2rem;
+            margin-left: auto;
+            height: 4rem;
+        }
+
+        #logo {
+            width: 4rem; 
+            height: 4rem; 
+            border-radius: 25px;
+        }
 
     </style>
 
@@ -143,61 +204,20 @@
     <ul class="heart">
         <li class="chamber">
             <div class="header_nav_bar_horizontal">
-                <ul class="navigation_options">
-                    <li class="nav_logo_redirect">
-
-                    </li>
-                    <li class="page_redirect">
-                        <ul class="button_container">
-                            <li class="redirect_logo">
-                                <img src="" alt="">
-                            </li>
-                            <li class="redirect_name">
-                                <h1></h1>
-                            </li>
+                <li class="header">
+                    <a href="primary\LANDINGPAGE_MODULE\homepage.html">
+                        <img src="receiptify_logo.png" alt="RECEIPTIFY-LOGO" id="logo">
+                    </a>    
+                    <ul class="nav_bar">
+                        <ul>
+                            <li><a href="primary\LANDINGPAGE_MODULE\homepage.html" class="active">HOME</a></li>
+                            <li><a href="primary\ABOUTPAGE_MODULE\ABOUT-central.html">ABOUT PAGE</a></li>
+                            <li><a href="primary\SOLUTIONSPAGE_MODULE\SOLUTIONS-central.html">SOLUTIONS PAGE</a></li>
+                            <li><a href="primary\DEMOAPP_MODULE\DEMO-app.html">APP DEMO PAGE</a></li>
+                            <li><a href="primary\WEBAPP_MODULE\login-page.html">LOGIN/SIGNUP</a></li>
                         </ul>
-                    </li>
-                    <li class="page_redirect">
-                        <ul class="button_container">
-                            <li class="redirect_logo">
-                                <img src="" alt="">
-                            </li>
-                            <li class="redirect_name">
-                                <h1></h1>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="page_redirect">
-                        <ul class="button_container">
-                            <li class="redirect_logo">
-                                <img src="" alt="">
-                            </li>
-                            <li class="redirect_name">
-                                <h1></h1>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="special_pages">
-                        <ul class="button_container">
-                            <li class="redirect_logo">
-                                <img src="" alt="">
-                            </li>
-                            <li class="redirect_name">
-                                <h1></h1>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="special_pages">
-                        <ul class="button_container">
-                            <li class="redirect_logo">
-                                <img src="" alt="">
-                            </li>
-                            <li class="redirect_name">
-                                <h1></h1>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                    </ul>
+                </li>
             </div>
         </li>
         <li class="chamber">

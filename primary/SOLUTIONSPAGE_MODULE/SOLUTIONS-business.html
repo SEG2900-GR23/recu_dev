@@ -17,15 +17,23 @@
         body {
             min-height: 100vh;
             min-width: 100vh;
-            background: linear-gradient(to top, rgb(248, 142, 151),rgb(168, 168, 243),rgb(156, 243, 214));
+            background: linear-gradient(to top, rgba(248, 142, 151, 0.534), rgba(168, 168, 243, 0.534),rgba(156, 243, 214, 0.452));
         }
 
         ul {
             list-style-type: none; /* Removes bullets from unordered lists */
         }
 
+        .heart{
+            display: flex; /* Make the list a flex container */
+            flex-direction: column; /* Set the direction to column */            
+            justify-content: center;
+            align-items: center;
+        }
+    
+
         .features_list{ 
-            margin: 1rem;
+            margin: 2rem;
             justify-self: center;
             align-self: center;
             display: flex;
@@ -48,6 +56,7 @@
         .content_card{
             flex: 1; /* Make each item take up equal width */
             padding: 2rem;
+            margin-left: 2rem;
         }
         
         .content_info {
@@ -59,7 +68,7 @@
 
 
         .content_info .title {
-            color: rgb(219, 231, 246);
+            color: rgb(232, 231, 252);
             justify-content: left;
             align-items: left;  
             padding-bottom: 1rem;   
@@ -73,16 +82,118 @@
             width: 20rem;    
         }
 
-        .content_image_container {
+        .content_image_container,.footer_graphic {
             background: linear-gradient(to bottom, aquamarine, rgb(128, 112, 252));
 
             border-radius: 3rem;
             border: 10px solid white;
-            max-width: 15rem; /* Ensure the image doesn't exceed its original width */
+            width: 15rem; /* Ensure the image doesn't exceed its original width */
             height: 15rem; /* Allow the height to adjust based on the image's aspect ratio */
 
             object-fit: cover; /* Scale the image to cover the entire container without squishing */
             object-position: center; /* Center the image within the container */
+        }
+
+        .footer {
+            display: flex;
+            background: linear-gradient(to top, rgb(241, 162, 172),rgb(164, 164, 245));
+            border-radius: 3rem;
+            width: auto + 2rem;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            margin:2rem;
+        }
+
+        .footer_card {
+            display: flex; /* Make the list a flex container */
+            flex-direction: column; /* Set the direction to column */
+            margin: 1.25rem;
+            background: white;
+            border-radius: 2rem;
+            padding: 0.5rem;
+        }
+
+        
+
+        .footer_button_container {
+            padding-bottom: 0.7rem;
+            text-align: center;
+
+        }
+
+        .footer_redirect {
+
+            padding: 0.5rem 0.5rem;
+            font-size: 16px;
+            font-weight: 600;
+
+            width:13rem;
+            height: auto;
+            border-radius: 3rem;
+            border: 5px solid purple;
+        }
+
+        .header_nav_bar_horizontal {
+            padding: 2rem;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 30px 100px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: white;
+            font-weight: 600;
+            border-radius: 10px;
+            font-size: 1.25rem;
+        }
+
+        .header ul li a:hover{
+            background-color: rgb(255, 80, 118);
+            color: white;
+            transition: 100ms ease-in;
+        }
+
+        .header ul li a.active{
+            background-color: white;
+            color: rgb(255, 80, 118);
+        }
+
+        .header .nav_bar {
+            display: flex;
+            background: rgb(78, 73, 206);
+            border-radius: 20px;
+            padding: 1rem 2rem 1rem 2rem;
+            margin-left: auto;
+            height: 4rem;
+        }
+
+        #logo {
+            width: 4rem; 
+            height: 4rem; 
+            border-radius: 25px;
         }
 
     </style>
@@ -90,116 +201,184 @@
 </head>
 <body>
 
-    <ul class="features_list business">
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Sale Modules</h1>
-                        <h3 class="text">Transform your point-of-sale with Receiptify's Sale Modules. Seamlessly integrate them with your systems to digitize receipts, boost efficiency, and streamline sales.                        </h3>
-                    </div>
+    <ul class="heart">
+        <li class="chamber">
+            <div class="header_nav_bar_horizontal">
+                <li class="header">
+                    <a href="primary\LANDINGPAGE_MODULE\homepage.html">
+                        <img src="receiptify_logo.png" alt="RECEIPTIFY-LOGO" id="logo">
+                    </a>    
+                    <ul class="nav_bar">
+                        <ul>
+                            <li><a href="primary\LANDINGPAGE_MODULE\homepage.html" class="active">HOME</a></li>
+                            <li><a href="primary\ABOUTPAGE_MODULE\ABOUT-central.html">ABOUT PAGE</a></li>
+                            <li><a href="primary\SOLUTIONSPAGE_MODULE\SOLUTIONS-central.html">SOLUTIONS PAGE</a></li>
+                            <li><a href="primary\DEMOAPP_MODULE\DEMO-app.html">APP DEMO PAGE</a></li>
+                            <li><a href="primary\WEBAPP_MODULE\login-page.html">LOGIN/SIGNUP</a></li>
+                        </ul>
+                    </ul>
                 </li>
-                <img src="business_modules.png" alt="" class="content_image_container">
+            </div>
+        </li>
+        <li class="chamber">
+            <ul class="features_list business">
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Sale Modules</h1>
+                                <h3 class="text">Transform your point-of-sale with Receiptify's Sale Modules. Seamlessly integrate them with your systems to digitize receipts, boost efficiency, and streamline sales.                        </h3>
+                            </div>
+                        </li>
+                        <img src="business_modules.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Digital Receipt Integration</h1>
+                                <h3 class="text">Embrace digital receipts with our integration, reducing waste and simplifying record-keeping at the point of sale.</h3>
+                            </div>
+                        </li>
+                        <img src="digital_receipt_integration.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Customer Engagement</h1>
+                                <h3 class="text">At Receiptify, we understand the importance of customer satisfaction. Our platform enhances their experience by eliminating the clutter and empowering them with a choice.</h3>
+                            </div>
+                        </li>
+                        <img src="customer_engagement.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Eco-Friendly Solutions</h1>
+                                <h3 class="text">Join the sustainability movement by reducing paper receipt usage in your business. Save on paper costs and appeal to eco-conscious consumers, showcasing your commitment to green values.</h3>
+                            </div>
+                        </li>
+                        <img src="eco_friendly_banner.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Data Analytics & Insights</h1>
+                                <h3 class="text">Receiptify's Data Analytics offer invaluable insights into consumer spending. Optimize marketing and inventory management with data-driven decisions.</h3>
+                            </div>
+                        </li>
+                        <img src="business_sales_insights.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Inventory Tracking</h1>
+                                <h3 class="text">Keep your finger on the pulse of your inventory with our efficient Inventory Tracking tools. Never run out of stock or overstock again, ensuring you have the right products on hand to meet customer demand.</h3>
+                            </div>
+                        </li>
+                        <img src="inventory_trackinh.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Product Sales Analysis</h1>
+                                <h3 class="text">Identify your top-performing products with ease. Our analysis tools help you understand what's "flying off the shelves", allowing you to fine-tune your inventory and marketing strategies</h3>
+                            </div>
+                        </li>
+                        <img src="best_selling_product_analysis.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Peak Sales Periods Tracking</h1>
+                                <h3 class="text">Gain a competitive edge by identifying peak business times. This insight empowers effective staffing and inventory planning.</h3>
+                            </div>
+                        </li>
+                        <img src="peak_sale_period_tracking_feature_logo.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Simplified Accounting</h1>
+                                <h3 class="text"> Say goodbye to cumbersome accounting processes. Receiptify streamlines transaction management and accounting, saving you time and reducing the risk of errors.</h3>
+                            </div>
+                        </li>
+                        <img src="business_simplified_accounting_feature_logo.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
+                <li class="content_card">
+                    <ul class="content_body">
+                        <li>
+                            <div class="content_info">
+                                <h1 class="title">Tech Support</h1>
+                                <h3 class="text">Rest assured with our continuous technical support. We're here to ensure that your modules and software run smoothly, minimizing downtime and keeping your business operations efficient and trouble-free.</h3>
+                            </div>
+                        </li>
+                        <img src="tech_support_feature_logo.png" alt="" class="content_image_container">
+                    </ul>
+                </li>
             </ul>
         </li>
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Digital Receipt Integration</h1>
-                        <h3 class="text">Embrace digital receipts with our integration, reducing waste and simplifying record-keeping at the point of sale.</h3>
-                    </div>
-                </li>
-                <img src="digital_receipt_integration.png" alt="" class="content_image_container">
-            </ul>
-        </li>
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Customer Engagement</h1>
-                        <h3 class="text">At Receiptify, we understand the importance of customer satisfaction. Our platform enhances their experience by eliminating the clutter and empowering them with a choice.</h3>
-                    </div>
-                </li>
-                <img src="customer_engagement.png" alt="" class="content_image_container">
-            </ul>
-        </li>
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Eco-Friendly Solutions</h1>
-                        <h3 class="text">Join the sustainability movement by reducing paper receipt usage in your business. Save on paper costs and appeal to eco-conscious consumers, showcasing your commitment to green values.</h3>
-                    </div>
-                </li>
-                <img src="eco_friendly_banner.png" alt="" class="content_image_container">
-            </ul>
-        </li>
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Data Analytics & Insights</h1>
-                        <h3 class="text">Receiptify's Data Analytics offer invaluable insights into consumer spending. Optimize marketing and inventory management with data-driven decisions.</h3>
-                    </div>
-                </li>
-                <img src="business_sales_insights.png" alt="" class="content_image_container">
-            </ul>
-        </li>
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Inventory Tracking</h1>
-                        <h3 class="text">Keep your finger on the pulse of your inventory with our efficient Inventory Tracking tools. Never run out of stock or overstock again, ensuring you have the right products on hand to meet customer demand.</h3>
-                    </div>
-                </li>
-                <img src="inventory_trackinh.png" alt="" class="content_image_container">
-            </ul>
-        </li>
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Product Sales Analysis</h1>
-                        <h3 class="text">Identify your top-performing products with ease. Our analysis tools help you understand what's "flying off the shelves", allowing you to fine-tune your inventory and marketing strategies</h3>
-                    </div>
-                </li>
-                <img src="best_selling_product_analysis.png" alt="" class="content_image_container">
-            </ul>
-        </li>
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Peak Sales Periods Tracking</h1>
-                        <h3 class="text">Gain a competitive edge by identifying peak business times. This insight empowers effective staffing and inventory planning.</h3>
-                    </div>
-                </li>
-                <img src="peak_sale_period_tracking_feature_logo.png" alt="" class="content_image_container">
-            </ul>
-        </li>
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Simplified Accounting</h1>
-                        <h3 class="text"> Say goodbye to cumbersome accounting processes. Receiptify streamlines transaction management and accounting, saving you time and reducing the risk of errors.</h3>
-                    </div>
-                </li>
-                <img src="business_simplified_accounting_feature_logo.png" alt="" class="content_image_container">
-            </ul>
-        </li>
-        <li class="content_card">
-            <ul class="content_body">
-                <li>
-                    <div class="content_info">
-                        <h1 class="title">Tech Support</h1>
-                        <h3 class="text">Rest assured with our continuous technical support. We're here to ensure that your modules and software run smoothly, minimizing downtime and keeping your business operations efficient and trouble-free.</h3>
-                    </div>
-                </li>
-                <img src="tech_support_feature_logo.png" alt="" class="content_image_container">
-            </ul>
+        <li class="chamber">
+            <div class="global_footer_container">
+                <ul class="footer">
+                    <ul class="footer_card">
+                        <li class="footer_graphic_container">
+                            <img src="contact_us_footer_banner.png" alt="" class="footer_graphic">
+                        </li>
+                        <li class="footer_button_container">
+                            <button class="footer_redirect">CONTACT US</button>
+                        </li>
+                    </ul>
+                    <ul class="footer_card">
+                        <li class="footer_graphic_container">
+                            <img src="privacy_policy.png" alt="" class="footer_graphic">
+                        </li>
+                        <li class="footer_button_container">
+                            <button class="footer_redirect">PRIVACY POLICY</button>
+                        </li>
+                    </ul>
+                    <ul class="footer_card">
+                        <li class="footer_graphic_container">
+                            <img src="terms_and_conditions.png" alt="" class="footer_graphic">
+                        </li>
+                        <li class="footer_button_container">
+                            <button class="footer_redirect">TERMS & CONDITIONS</button>
+                        </li>
+                    </ul>
+                    <ul class="footer_card">
+                        <li class="footer_graphic_container">
+                            <img src="solutions_footer_banner.png" alt="" class="footer_graphic">
+                        </li>
+                        <li class="footer_button_container">
+                            <button class="footer_redirect">SOLUTIONS</button>
+                        </li>
+                    </ul>
+                    <ul class="footer_card">
+                        <li class="footer_graphic_container">
+                            <img src="product_demo_footer_banner.png" alt="" class="footer_graphic">
+                        </li>
+                        <li class="footer_button_container">
+                            <button class="footer_redirect">PRODUCT DEMO</button>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
         </li>
     </ul>
 
