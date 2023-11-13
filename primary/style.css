@@ -1,144 +1,210 @@
-/* Color Constants */
-:root {
-  --main-color-1: #6096b4;
-  --main-color-2: #93bfcf;
-  --main-color-3: #bdcdd6;
-  --text-color: #6096b4;
-  --background-color: #eee9da;
-  --accent-color: #f69e7b;
-  --hover-accent-color: #d2e9e9;
-  --hover-accent-text-color: #54259;
-}
-
+/* ======================================================================================================================================================================================================================================== */
 /* Typography Constants */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 
-/* Body Styles */
+/* ======================================================================================================================================================================================================================================== */
+/* ALL CSS FOR FULL WEBSITE PAGE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
 body {
-  font-family: "Raleway", sans-serif;
-  color: var(--text-color);
-  background-color: var(--accent-color);
-  display: flex;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  min-width: 100vh;
+  background: linear-gradient(
+    to top,
+    rgba(248, 142, 151, 0.534),
+    rgba(168, 168, 243, 0.534),
+    rgba(156, 243, 214, 0.452)
+  );
 }
 
-/* Title Styles */
-h1 {
-  font-family: "Montserrat", sans-serif;
+ul {
+  list-style-type: none; /* Removes bullets from unordered lists */
 }
 
-/* Paragraph Styles */
-p {
-  font-family: "Raleway", sans-serif;
+.heart {
+  display: flex; /* Make the list a flex container */
+  flex-direction: column; /* Set the direction to column */
+  justify-content: center;
+  align-items: center;
 }
 
-/* Subparagraph Styles */
-.subparagraph {
-  font-family: "JetBrains Mono", monospace;
-}
-
-/* Accent Styles */
-.accent {
-  color: var(--accent-color);
-}
-
-/* Hover Styles */
-.hover-accent {
-  color: var(--hover-accent-text-color);
-}
-
-.hover-accent:hover {
-  background-color: var(--hover-accent-color);
-}
-
-/* ==================================================================================================================== */
-/* ALL CSS FOR HOME PAGE */
-
-
-/* ==================================================================================================================== */
-/* ALL CSS FOR USER WEB APP */
-.navigation {
-  width: 9rem;
-  height: 100vh;
-  color: --accent-color;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-buttons {
-  width: 5rem;
-  height: 5rem;
-  padding: 20;
-  margin-top: 1.25rem;
-  background-color: var(--main-color-2);
-  border-radius: 50px;
-  border-color: lightblue;
-  border-width: 0.25rem;
-}
-
-#feature-icon {
+/* ======================================================================================================================================================================================================================================== */
+/* ALL CSS FOR SOLUTIONS' PAGE */
+.features_list {
+  margin: 2rem;
+  justify-self: center;
   align-self: center;
-  padding-top: 0.25rem;
-  font-size: 2.5rem;
-  color: whitesmoke;
-}
-
-.features,
-.account_options {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: lightcoral;
-  size: 100px;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 1.5rem;
-}
-
-.analytical-widgets,
-.receipt-list {
-  display: flex;
+  width: 100vw;
   flex-wrap: wrap;
-  align-items: center;
-  background-color: lightcoral;
-  size: 100px;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 1.5rem;
+  gap: 1.25rem;
 }
 
-.widget,
-.receipt-token {
+.content_body {
+  margin: 1rem;
   display: flex;
-  flex-direction: rows;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: var(--main-color-2);
-  size: 100px;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 1.5rem;
+  background: linear-gradient(to top, aquamarine, rgb(128, 112, 252));
+  width: 35.5rem;
+  height: 20rem;
+  border-radius: 3rem;
+  border: 10px solid white;
 }
 
-.widget-name,
-.widget-advanced-view-button {
-  background-color: aliceblue;
-  border-radius: 0.65rem;
+.content_card {
+  flex: 1; /* Make each item take up equal width */
+  padding: 2rem;
+  margin-left: 2rem;
+}
+
+.content_info {
+  padding: 2rem;
+  color: white;
+  justify-content: left;
+  align-items: left;
+}
+
+.content_info .title {
+  color: rgb(232, 231, 252);
+  justify-content: left;
+  align-items: left;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.content_info .text {
+  color: rgb(255, 255, 255);
+  justify-content: left;
+  align-items: left;
+  width: 20rem;
+}
+
+/* ======================================================================================================================================================================================================================================== */
+/* ALL CSS FOR FOOTER PAGE */
+.content_image_container,
+.footer_graphic {
+  background: linear-gradient(to bottom, aquamarine, rgb(128, 112, 252));
+
+  border-radius: 2rem;
+  border: 10px solid white;
+  width: 15rem; /* Ensure the image doesn't exceed its original width */
+  height: 15rem; /* Allow the height to adjust based on the image's aspect ratio */
+
+  object-fit: cover; /* Scale the image to cover the entire container without squishing */
+  object-position: center; /* Center the image within the container */
+}
+
+.footer {
+  display: flex;
+  background: linear-gradient(to top, rgb(241, 162, 172), rgb(164, 164, 245));
+  border-radius: 2rem;
+  width: auto + 2rem;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.footer_card {
+  display: flex; /* Make the list a flex container */
+  flex-direction: column; /* Set the direction to column */
+  margin: 1.25rem;
+  background: white;
+  border-radius: 2rem;
   padding: 0.5rem;
 }
 
-.widget-graphic {
-  size: 100px;
-  width: 18rem;
-  height: 2rem + width;
-  border-radius: 1.5rem;
+.footer_button_container {
+  padding-bottom: 0.7rem;
+  text-align: center;
 }
 
-/* ==================================================================================================================== */
+.footer_redirect {
+  padding: 0.5rem 0.5rem;
+  font-size: 16px;
+  font-weight: 600;
+
+  width: 13rem;
+  height: auto;
+  border-radius: 3rem;
+  color: rgb(78, 73, 206);
+  font-weight: 2000;
+  border: 5px solid rgb(78, 73, 206);
+  background: white;
+}
+
+/* ======================================================================================================================================================================================================================================== */
+/* ALL CSS FOR HEADER PAGE */
+.header_nav_bar_horizontal {
+  padding: 2rem;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: white;
+  font-weight: 1000;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+
+.header ul li a:hover {
+  background-color: rgb(255, 80, 118);
+  color: white;
+  transition: 100ms ease-in;
+}
+
+.header ul li a.active {
+  background-color: white;
+  color: rgb(255, 80, 118);
+}
+
+.header .nav_bar {
+  display: flex;
+  background: rgb(78, 73, 206);
+  border-radius: 20px;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-left: auto;
+  height: 4rem;
+}
+
+#logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 25px;
+  border: 5px solid white;
+}
+
+/* ======================================================================================================================================================================================================================================== */
 /* ALL CSS FOR FEATURES PAGE */
 .fearures-desc {
   width: 100rem;
@@ -159,170 +225,14 @@ p {
   border-radius: 1.5rem;
 }
 
-/* ==================================================================================================================== */
-/* ALL CSS FOR TEAMS PAGE */
-.full-team-list {
-  display: flex;
-  flex-flow: row;
-}
+/* ======================================================================================================================================================================================================================================== */
+/* ALL CSS FOR ABOUT PAGE */
 
-.member {
-  align-self: auto;
-  margin: 1rem;
-  background-color: #d2e9e9;
-  border-radius: 10px 50px;
-  padding: 1rem;
-}
+/* ======================================================================================================================================================================================================================================== */
+/* ALL CSS FOR HOME PAGE */
 
-.pfp {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 20%;
-  margin: 1rem;
-}
+/* ======================================================================================================================================================================================================================================== */
+/* ALL CSS FOR LOGIN/SIGNUP PAGE */
 
-.social-media-list {
-  display: flex;
-  flex-flow: row;
-  padding-left: 1rem;
-}
-
-.biography {
-  align-self: center;
-  padding-left: 4rem;
-}
-
-.social-media {
-  width: 2rem;
-  height: 2rem;
-  margin: 0.5rem;
-}
-
-.team-member img {
-  border-radius: 50%;
-  max-width: 100px;
-}
-
-/* ==================================================================================================================== */
-/* ALL CSS FOR SOLUTIONS PAGE */
-.business-plans {
-  display: flex;
-}
-
-.pricing-banner {
-  text-align: center;
-  width: 20rem;
-  height: 20rem;
-  padding: 1rem;
-}
-
-.pricing-banner-content {
-  position: relative;
-}
-
-.pricing-banner-card {
-  --flow-space: 0.5em;
-  --hue: 165;
-  --saturation: 82.26%;
-  --lightness: 51.37%;
-  flex: 1 1 14rem;
-  padding: 1.5em 2em;
-  display: grid;
-  grid-template-rows: auto auto auto 1fr;
-  align-items: start;
-  gap: 1.25em;
-  color: #eceff1;
-  background-color: #2b2b2b;
-  border: 1px solid #eceff133;
-  border-radius: 15px;
-}
-
-.pricing-banner-features {
-  line-height: 1.4;
-}
-
-.pricing-banner-title {
-  font-size: 1.05em;
-  font-weight: 600;
-}
-
-.pricing-banner-price {
-  font-size: 1.75em;
-  font-weight: 700;
-}
-
-.pricing-banner-features > * + * {
-  margin-top: var(--flow-space, 1.25em);
-}
-
-.pricing-banner-cta {
-  display: block;
-  align-self: end;
-  margin: 1em 0 0.5em 0;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: transparent;
-  outline: 1px solid white;
-  padding: 0.7em;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.pricing-banner-card:hover {
-  --lightness: 80%;
-  background: #ffffff80;
-  color: #000;
-  outline: 1px solid rgb(255, 255, 255);
-  box-shadow: inset 0 0 80px whitesmoke,
-    inset 20px 0 80px rgba(255, 0, 255, 0.747), inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff,
-    -10px 0 80px #f0f, 10px 0 80px #0ff;
-  transition: all ease-in-out 0.3s;
-}
-
-.pricing-banner-card:hover > .pricing-banner-cta {
-  outline: none;
-  background-color: #0d0d0d;
-}
-
-/* ==================================================================================================================== */
-/* ALL CSS FOR FEATURES ALT PAGE */
-
-/* ==================================================================================================================== */
-/* ALL CSS FOR NAV BAR */
-
-.globalNavBar {
-  display: flex;
-  align-self: center;
-  width: fit-content;
-  padding: 1rem;
-}
-
-.pages {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15),
-    0 6px 12px 0 rgba(24, 94, 224, 0.15);
-  padding: 0.75rem;
-  border-radius: 99px;
-  gap: 1rem;
-}
-
-.pageMarker {
-  display: flex;
-  height: 1rem;
-  width: 10rem;
-  justify-content: space-evenly;
-  font-size: 1rem;
-  color: black;
-  font-weight: 500;
-  padding-top: font-size + 1rem;
-}
-
-.selectedPage {
-  background-color: grey;
-  border-radius: 10px;
-}
+/* ======================================================================================================================================================================================================================================== */
+/* ALL CSS FOR WEBAPP PAGE */
