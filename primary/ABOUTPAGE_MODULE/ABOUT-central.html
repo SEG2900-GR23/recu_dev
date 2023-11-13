@@ -7,7 +7,16 @@
     <link rel="stylesheet" type="text/css" href="/primary/style.css">
 
     <style>
-        #container {
+      img {
+        border-style: var(circle);
+        border-width: 5px;
+        clip-path: circle();
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+      #container {
         position: relative;
         display: flex;
         justify-content: center;
@@ -26,7 +35,7 @@
         border: 10px solid white;
         border-radius: 50px;
         width: 350px;
-        height: 450px;
+        height: 470px;
         margin-top: 50px;
         margin-left: 50px;
         margin-bottom: 50px;
@@ -35,13 +44,72 @@
       }
 
       .title {
+        color: darkblue;
         text-align: center;
         font-family: sans-serif;
+        font-weight: bold;
       }
 
       #email {
+        color: darkblue;
         text-align: center;
         font-family: sans-serif;
+        padding: 1rem;
+      }
+
+      h1 {
+        color: blueviolet;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 2rem;
+        border: 10px solid rgb(128, 112, 252);
+        border-radius: 50px;
+        background: aquamarine;
+        width: 320px;
+        height: 115px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        margin-right: 50px;
+      }
+
+      #team_page_header{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        color:aliceblue;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 1rem;
+        margin-left: 60px;
+        margin-right: 60px;
+        border: 10px solid white;
+        border-radius: 50px;
+        background: rgb(128, 112, 252);
+        width: 1200px;
+        height: 130px;
+      }
+
+      #team_description{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h3 {
+        color:darkblue;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 1rem;
+      }
+
+      .our_team {
+        padding: 5rem;
       }
     </style>
 
@@ -79,11 +147,11 @@
 
                 </div>
                 <div class="our_team">
-                    <div>
+                    <div id="team_page_header">
                         <h1>Meet Our Team</h1>
                       </div>
                   
-                      <div>
+                      <div id="team_description">
                         <h2>Meet our dynamic team of passionate professionals dedicated to driving innovation and achieving excellence. With diverse skills and a shared commitment to success, we collaborate seamlessly to turn ideas into impactful solutions.</h2>
                       </div>
                   
