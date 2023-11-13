@@ -17,26 +17,132 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <style>
+        :root {
+            --main-color-1: #6096b4;
+            --main-color-2: #93bfcf;
+            --main-color-3: #bdcdd6;
+            --text-color: #6096b4;
+            --background-color: #eee9da;
+            --accent-color: #f69e7b;
+            --hover-accent-color: #d2e9e9;
+            --hover-accent-text-color: #54259;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: var(--main-color-1);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--hover-accent-text-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--main-color-2);
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: gray;
+        }
+
+        .btn {
+            background-color: var(--main-color-1);
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--main-color-2);
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .right-content {
+            flex: 1;
+            text-align: right;
+        }
+
+        .center-content {
+            text-align: center;
+        }
+    </style>
+
 </head>
 <body>
-    <div class="globalNavBar">
-        <div class="pages">
-            
-            <button class="pageMarker" id="logo-redirect"><img src="primary/assets/company-logo.jpg" alt="company-logo"></button>
+    
+    <!--
 
-            <button class="pageMarker" id="home-page-redirect">HOME</button>
+        <div class="globalNavBar">
+            <div class="pages">
+                
+                <button class="pageMarker" id="logo-redirect"><img src="primary/assets/company-logo.jpg" alt="company-logo"></button>
 
-            <button class="pageMarker" id="about-page-redirect">ABOUT</button>
+                <button class="pageMarker" id="home-page-redirect">HOME</button>
 
-            <button class="pageMarker" id="solutions-page-redirect">SOLUTIONS</button>
+                <button class="pageMarker" id="about-page-redirect">ABOUT</button>
 
-            <button class="pageMarker" id="demo-page-redirect">OUR PRODUCT</button>
+                <button class="pageMarker" id="solutions-page-redirect">SOLUTIONS</button>
 
-            <button class="pageMarker" id="login-page-redirect">SIGN UP</button>
+                <button class="pageMarker" id="demo-page-redirect">OUR PRODUCT</button>
 
+                <button class="pageMarker" id="login-page-redirect">SIGN UP</button>
+
+            </div>
         </div>
-    </div>
 
+    -->
+
+    <div class="container">
+        <div class="flex-container">
+            <div class="left-content">
+                <h2>Who We Are</h2>
+                <p>Receiptify is driven by a deep passion for revolutionizing the way you handle your receipts and expenses. We're firm believers that financial record-keeping should be as effortless as it is eco-friendly.</p>
+            </div>
+            <div class="right-content">
+                <h2>Our Mission</h2>
+                <p>Our mission is straightforward: we're here to make your life easier by providing a straightforward solution for receipt and expense management. We recognize the complexities of tracking financial transactions and the environmental consequences of paper receipts. Our objective is to unite convenience with sustainability.</p>
+            </div>
+        </div>
+        <div class="center-content">
+            <h2>Why Choose Receiptify</h2>
+            <p>User-Centric Design: We prioritize your needs, designing Receiptify to be intuitive and efficient.</p>
+            <p>Data Security: Your privacy and data security are our top priorities. We employ robust measures to safeguard your information.</p>
+            <p>Eco-Friendly Practices: By going paperless with Receiptify, you help reduce paper waste and minimize your environmental footprint.</p>
+        </div>
+        <a href="#" class="btn">Learn More</a>
+    </div>
        
     <!-- Link to Javascript -->
     <script src="main.js"></script>
