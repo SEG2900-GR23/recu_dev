@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width: 100%;
+}
+
+h2{
+	font-family: 'Playfair Display', serif;
+	font-size: 200%;
+	font-weight: 700;
+	color: darkgray;
+	text-align: center;
+	text-decoration: underline;
+}
+p{
+	font-family: 'Raleway', serif;
+	color: darkgray;
+	font-size: 140%;
+	line-height: 180%;
+	text-align: justify;
+	font-weight: 300;
+
+}
+
+img{
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+.intro{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(https://images.pexels.com/photos/70577/sunset-birds-flying-sky-70577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat 50% 50%; /* no-repeat so that picture is posted only once*/
+	background-size: cover;
+	display: table;
+	top: 0;
+}
+
+.intro.inner{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.content{
+	max-width: 600px;
+	margin: auto;
+}
+
+h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 300%;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	padding: 2%;
+	text-shadow: 0px 0px 250px black;
+}
+
+.content.p{
+	color: white;
+}
+
+.inner{
+	max-width: 600px;
+	margin: auto;
+	font-size: 170%;
+	line-height: 1.6;
+	padding: 10px;
+}
+
+/*--Start Navigation button--*/
+
+nav{
+	float: left;
+	padding: 4% 5% 0 0;
+	height: 50px;
+}
+
+nav ul{
+	list-style: none;
+	float: left;
+
+}
+
+nav ul li{
+	font-family: 'Raleway', serif;
+	font-size: 120%;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+
+}
+
+nav ul li a:hover{
+	text-decoration: underline;
+}
+nav ul, nav:active ul{
+	display: none;
+	left: 45px;
+	top: 60px;
+	padding: 8px 0;
+	width: 20%;
+	z-index: 1000;
+}
+
+nav li{
+	width: 100%;
+	padding: 8px 0px 10px 7px;
+	margin: 0;
+}
+
+nav:hover ul{
+	display: block;
+	position: absolute;
+}
+
+#menu-icon{
+	width: 30px;
+	height: 26px;
+	background: url(img/nav-icon.png) center;
+	display: inline-block;
+	margin: 0px 0px 0px 20px ;
+}
+/**--end of navigation --*/
+
+.left-col{
+	width: 60%;
+	float: left;
+	margin: 4% 0% 4% 4%;
+}
+
+.sidebar{
+	width: 26%;
+	float: left;
+	margin: 4%;
+}
+
+.one-third-port{
+	width: 29.333%;
+	padding: 2%;
+	float: left;
+}
+
+.one-third-port img:hover{
+	opacity: 0.6;
+}
+
+.contact p{
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.contact a{
+	color: #2C2C2C;
+}
+
+.clearfix{
+	clear: both;
+	height: 3%;
+}
+
+.break{
+	display: none;
+}
+
+.mid-body-inner{
+	background-image: url("https://images.pexels.com/photos/1080722/pexels-photo-1080722.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	width: 100%;
+	height: 100%;
+	padding: 7%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.6;
+}
+
+.social{
+	list-style-type: none;
+	text-align: center;
+}
+
+.social li{
+	display: inline;
+}
+
+.social i{
+	font-size: 270%;
+	margin: 1% 5% 7% 4%;
+	color: black;
+}
+
+.social i:hover{
+	color: gray;
+}
+
+footer.second {
+	background-color: black;
+}
+
+footer.second p{
+	color: white;
+	text-align: center;
+	margin: 5%;
+}
+
+/**--Pick a schedule button --*/
+.button{
+ font-size: 20px;
+ padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: darkgray;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  
+}
+.button:hover {
+	background-color: gray;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+@media screen and (max-width: 768px){
+	#menu-icon {
+		margin: 26px 0 0 26px;
+	}
+	nav ul, nav:active ul{
+		padding: 8px 0;
+		left: 23px;
+		top: 34px;
+		width: 50%;
+	}
+	.inner{
+		font-size: 120%;
+	}
+	.content h1{
+		font-size: 180%;
+	}
+	p{
+		font-size: 120%;
+	}
+	h2{
+		font-size: 160%;
+	}
+	.left-col{
+		width: 96%;
+		padding: 0 2%;
+		margin: 0 0 3% 0;
+	}
+	.sidebar{
+		width:  96%;
+		margin: 0 auto;
+	}
+	img{
+		padding: 2%;
+	}
+	.one-third-port{
+		width: 96%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.break{
+		display: block;
+	}
+	.mid-body{
+		display: none;
+	}
+}
+
+    </style>
+    
+</head>
+<body>
+    <section class="intro">
+		<nav> 
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li> <a href="#about">About Us</a></li>
+				<li> <a href="#port">Our goal</a></li>
+				<li> <a href="#serv">Services</a></li>
+				<li> <a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="inner">
+			<div class="content">
+				<h1>RECEIPTIFY FLYING TOWARD A SUSTANABLE FUTURE</h1>
+			</div>
+		</div>
+
+	</section>
+	<a name="about">
+<div class="clearfix"></div>
+	<section class="left-col">
+		<h2>About Us</h2>
+		<p style="text-indent: 6%;"> Receiptify is a cutting edge digital financial management solution that leverages digital receipt technology to stream line and consolidates all financial transactions within a singular user friendly dashboard. </p>
+	</section>
+	<section class="sidebar">
+		<img src="img/finance.png">
+	</section>
+	
+<div class="clearfix">
+	<a name="port">
+	<h2>Our goal: Revolutionise the receipts industry</h2>
+	<section class="one-third-port">
+		<img src="img/pic1.png"></a>
+	</section>
+	<section class="one-third-port">
+		<img src="img/pic2.png"></a>
+	</section>
+	<section class="one-third-port">
+		<img src="img/pic3.png"></a>
+	</section>
+
+</div>
+
+<div class="clearfix"></div>
+	<a name="serv">
+		<section class= "left-col">
+			<h2> Services We Offer </h2>
+			<p style="text-indent: 6%;"> We are have a range of services and we are available to serve the receipts need of your business. We are the best in the domain</p>
+			
+		</section>
+		<section class="sidebar">
+			<section class="contact">
+				<p> -Maintenance Service every 3 months </p>
+				<p>-Contact us for more details on services</p> 
+			</section>
+		</section>
+
+<div class="clearfix"></div>
+		<section class="mid-body">
+			<div class="mid-body-inner">
+			</div>	
+		</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="clearfix"></div>
+	<a name="contact">
+	<h2>Contact Us</h2>
+	<section class="contact">
+		<p>Receiptify Ltd | <br class="break"> 
+		<p> University of Ottawa <br class="break"> Ottawa <br class="break"> ON <br class="break">K1N 1K5</p>
+	</section>
+
+<div class="clearfix"></div>
+	<footer>
+		<ul class="social">
+			<li><a href="https://www.google.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+			<li><a href="https://www.google.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+			<li><a href="https://www.google.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+			<li><a href="https://www.google.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+				
+			</li>
+		</ul>
+	</footer>
+	<footer class="second">
+		<p> &copy; ReceiptifyInc</p>
+	</footer>
+</body>
+</html>
