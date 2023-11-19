@@ -111,28 +111,7 @@
       .our_team {
         padding: 5rem;
       }
-      .value_body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background-color: rgb(175, 101, 28); 
-      filter: blur(30px);
-      scroll-behavior: smooth;
-      height: 150vh; 
-        }
-
-        #scrollUp, #scrollDown {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            cursor: pointer;
-        }
-
-    .value_title {
+      .value_title {
       font-family: 'Futura', sans-serif;
       font-weight: 300;
       color: white;
@@ -176,11 +155,31 @@
       margin-right: 10px;
     }
     .value_main{
-      display: flex;
+      
       justify-content: space-around;
       padding: 20px 0;
       margin-left: 10px;
       margin-right: 10px;
+      align-items: vertical;
+      
+        }
+      .value_main:before{content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: rgb(175, 101, 28); 
+      filter: blur(30px);
+      scroll-behavior: smooth;
+      height: 150vh}
+
+        #scrollUp, #scrollDown {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
     }
 
     
@@ -307,7 +306,7 @@
 
                 </div>
                 <div class="our_values">
-                  <div class="value_manin">
+                  <div class="value_main">
                     <h1 class="value_title">OUR VALUES
                 
                     </h1>
