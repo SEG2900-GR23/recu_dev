@@ -121,14 +121,15 @@
       text-shadow: 20px;
     }
     .under {
-      width: 100%;
+  width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, orange, transparent 20%, orangered);
+  background: linear-gradient(to right, rgb(56, 174, 200), rgb(10, 227, 212));
+  
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: orange;
   border-radius: 20px;
 }
+
  
     .value_title_{
       font-family: 'Futura', sans-serif;
@@ -150,40 +151,21 @@
     .value_container {
       display: flex;
       justify-content: space-around;
-      padding: 20px 0;
+      
       margin-left: 10px;
       margin-right: 10px;
     }
     .value_main{
       
-      justify-content: space-around;
-      padding: 20px 0;
-      margin-left: 10px;
-      margin-right: 10px;
-      align-items: vertical;
-      
-        }
-      .value_main:before{content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background-color: rgb(175, 101, 28); 
-      filter: blur(30px);
-      scroll-behavior: smooth;
-      height: 150vh}
-
-        #scrollUp, #scrollDown {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            cursor: pointer;
-    }
-
-    
-
+      display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #51b5dc;
+  
+}
     .value_company {
       flex: 1;
       display: flex;
