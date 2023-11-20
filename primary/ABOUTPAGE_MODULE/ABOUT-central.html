@@ -111,6 +111,176 @@
       .our_team {
         padding: 5rem;
       }
+      body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: rgb(175, 101, 28); 
+      filter: blur(30px);
+      scroll-behavior: smooth;
+      height: 150vh; 
+        }
+
+        #scrollUp, #scrollDown {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+    .value_title {
+      font-family: 'Futura', sans-serif;
+      font-weight: 300;
+      color: white;
+      text-align: center;
+      margin-bottom: 60px;
+      margin-top: 25px;
+      text-shadow: 20px;
+    }
+    .under {
+      
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(56, 174, 200), rgb(10, 227, 212));
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+
+ 
+    .value_title_{
+      font-family: 'Futura', sans-serif;
+      font-weight: 100;
+      color: white;
+      text-align: center;
+      margin-bottom:20px;
+      color: white;}
+
+      .value_title_c{
+      font-family: 'Futura', sans-serif;
+      font-weight: 100;
+      color: white;
+      margin-right: 10px;
+      margin-bottom:20px;
+      color: white;
+
+    }
+    .value_container {
+      display: flex;
+      justify-content: space-around;
+      
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .value_main{
+      
+      display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #51b5dc;
+  
+}
+    .value_company {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px;
+    }
+
+    .value_customor {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left:200px ;
+
+    }
+    .importance{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 20px;
+      margin-left: 20px;
+      transition: opacity 0.5s ease;
+    }
+
+    .value_paragrahe {
+      margin: 0;
+      text-align: start;
+      font-size: 15px;
+      color: white;
+      
+    }
+
+    button {
+      padding: 0.8em 2em;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.726);
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+      margin-top: 100px; 
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    button:hover {
+      background-color: #3323c4;
+      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+      color: #fff;
+      transform: translateY(-7px);
+    }
+
+    button:active {
+      transform: translateY(-1px);
+      background-color: #584bd1;
+    }
+    .value_importance{
+      display: flex;
+      
+      justify-content: space-around;
+
+    }
+    .value_title_importance{
+      font-family: arial;
+      font-size: 20px;
+      font-style: none;
+      color: black;
+    }
+    
+    .value_title_importance_{
+      text-align: center;
+      margin: 0;
+      color: white;
+      margin-bottom: 10px;
+      font-size: 25px ;
+      color: black;
+
+    }
+    .paragraph_color{
+      color: black;
+      text-align: start;
+      display: inline;
+      font-size: 20px;
+    }
     </style>
 
 </head>
@@ -141,6 +311,81 @@
 
                 </div>
                 <div class="our_values">
+                  <div class="value_main">
+                    <h1 class="value_title">OUR VALUES
+                
+                    </h1>
+                    <div class="value_container">
+                      <div class="value_company">
+                        <h1 class="value_title_">Advanced Solutions for Businesses</h1>
+                        <p class="value_paragrahe" id="value_paragrahe">
+                          Our company offers a state-of-the-art solution for digitizing receipts efficiently. This not only includes scanning physical receipts but also incorporates advanced  Optical Character Recognition technology to convert paper documents into digital format swiftly.
+                        </p>
+                      </div>
+                      <div class="value_customor">
+                        <h1 class="value_title_c">
+                          Customer-Focused Solutions
+                        </h1>
+                        <p class="value_paragrahe" id="value_paragrahe">
+                          Instead of managing physical copies of receipts, customers can rely on a digital repository of their transactions. This not only reduces clutter but also ensures that important purchase records are never lost.
+                        </p>
+                      </div>
+                    </div>
+                    <button class="button">Read more</button>
+                  <div class="under">
+                    <div>
+                    </div>
+                  <div>
+                    <h1 class="value_title_importance_">
+                      Importance of being Receiptfy member 
+                    </h1>
+                    <div class="value_importance">
+                    <div class=" importance">
+                      <h1 class="value_title_importance">
+                        1.	Efficient Organization
+                    </h1>
+                    <p class="paragraph_color">
+                      Receiptfy provides a comprehensive digital solution for efficiently digitizing and organizing business receipts.This can significantly reduce the time and effort spent on manual receipt management, leading to improved efficiency in business operations.
+                  
+                    </p> 
+                    </div>
+                    <div class=" importance">
+                      <h1 class="value_title_importance">
+                        2.	Transparency 
+                      </h1>
+                      <p class="paragraph_color">
+                        Receiptfy offers customers transparent insights into their transactions. This transparency can build trust between businesses and customers, as customers have a clear understanding of their financial interactions and can easily access and review their transaction history.
+                  
+                      </p>
+                    </div>
+                    <div class=" importance">
+                      <h1 class="value_title_importance">
+                        3.	Reduction of Paper
+                      </h1>
+                      <p class="paragraph_color">
+                        By digitizing receipts, Receiptfy contributesto the reduction of paper usage.This not only aligns with environmental sustainability goals but also helps businesses save costs associated with paper and printing.
+                      </p>   
+                    </div>
+                    <div class=" importance">
+                      <h1 class="value_title_importance">
+                        4.	Advanced Data Analysis 
+                      </h1>
+                      <p class="paragraph_color">
+                        Digital receipts generated by Receiptfy can be leveraged for advanced data analysis. Businesses can gain valuable insights into spending patterns, identify trends, and make informed decisions based on the data collected over time.
+                      </p>  
+                    </div>
+                    <div class=" importance">
+                      <h1 class="value_title_importance">
+                        5.	Improved Record
+                      </h1>
+                      <p class="paragraph_color">
+                        Receiptfy ensures that important purchase records are securely stored and easily accessible. This can be particularly beneficial for businesses during audits, tax filing, or when reviewing financial performance. The digital format allows for efficient record-keeping and retrieval.
+                  
+                      </p> 
+                    </div>
+                  </div>
+                  </div>    
+                  </div>
 
                 </div>
                 <div class="our_solutions">
