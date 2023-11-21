@@ -355,7 +355,7 @@ a:hover {
   border-radius: 2rem;
 }
 .greeting_body .landing_graphic {
-  opacity: 0.8;
+  opacity: 0.6;
   border-radius: 2rem;
   width: 100%; /* Set the image width to 100% of the container's width */
   height: 100%; /* Set the image height to 100% of the container's height */
@@ -394,7 +394,21 @@ a:hover {
   width: auto;
   height: auto;
 }
+.about_pillar,
+.vision_card,
+.solutions_card,
+.content_card {
+  box-shadow: 0 0 2rem -5px rgba(140, 138, 138, 0.5);
+}
 
+.content_card {
+  box-shadow: 0 0 2rem -5px rgba(140, 138, 138, 0.5);
+  border-radius: 1rem;
+}
+
+.footer_card {
+  box-shadow: 0 0 10rem -5px rgba(50, 47, 47, 0.5);
+}
 .about_pillar {
   width: 42rem;
   height: auto;
