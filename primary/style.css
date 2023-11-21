@@ -355,13 +355,15 @@ a:hover {
   border-radius: 2rem;
 }
 .greeting_body .landing_graphic {
-  opacity: 0.65;
+  opacity: 0.8;
   border-radius: 2rem;
   width: 100%; /* Set the image width to 100% of the container's width */
   height: 100%; /* Set the image height to 100% of the container's height */
   object-fit: cover; /* Maintain aspect ratio and cover the entire container */
 }
-
+.greeting_body #about_us {
+  opacity: 0.9;
+}
 .greeting_body h1 {
   position: absolute; /* Position the <h1> tag relative to the container */
   top: 85%; /* Adjust the top position as needed */
