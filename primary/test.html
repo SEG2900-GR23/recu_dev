@@ -2,10 +2,417 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta feature_name="viewport" slide_content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eaeaea;
+    overflow: hidden;
+}
+
+.advanced_features_slide{
+    width: 1000px;
+    height: 600px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+    overflow: auto; /* Enable scrolling when content overflows */
+}
+
+.advanced_features_slide .slides .slide_container{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px rgb(81, 75, 75);    
+    background-size: cover;
+    display: flex;
+    transition: 0.5s;
+}
+
+.slides .slide_container:nth-child(1),
+.slides .slide_container:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slides .slide_container:nth-child(3){
+    left: 50%;
+}
+.slides .slide_container:nth-child(4){
+    left: calc(50% + 220px);
+}
+.slides .slide_container:nth-child(5){
+    left: calc(50% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slides .slide_container:nth-child(n + 6){
+    left: calc(50% + 660px);
+    opacity: 0.05;
+}
+
+.slide_container .slide_content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 350px;
+    text-align: cener;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-shadow: 16px 16px 16px 16px rgba(0, 0, 0, 0.5);
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+
+.slides .slide_container:nth-child(2) .slide_content{
+    display: block;
+}
+
+.slide_content .feature_name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.slide_content .description{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.slide_content button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+#sales_module {
+    background-image: url('/assets/homepage_solutions_slide/sales_module.png');
+    filter: brightness(0.82);
+}
+
+#digital_receipt_integration {
+    background-image: url('/assets/homepage_solutions_slide/digital_receipt_integration.png');
+    filter: brightness(0.82);
+}
+
+#ecofriendly {
+    background-image: url('/assets/homepage_solutions_slide/ecofriendly.png');
+    filter: brightness(0.82);
+}
+
+#customer_spending_analytics {
+    background-image: url('/assets/homepage_solutions_slide/customer_spending_analytics.png');
+    filter: brightness(0.82);
+}
+
+#inventory_tracking {
+    background-image: url('/assets/homepage_solutions_slide/inventory_tracking.png');
+    filter: brightness(0.82);
+}
+
+#best_selling_products {
+    background-image: url('/assets/homepage_solutions_slide/best_selling_products.png');
+    filter: brightness(0.82);
+}
+
+#customer_demographic_analytics {
+    background-image: url('/assets/homepage_solutions_slide/customer_demographic_analytics.png');
+    filter: brightness(0.82);
+}
+
+#peak_business_times {
+    background-image: url('/assets/homepage_solutions_slide/peak_business_times.png');
+    filter: brightness(0.82);
+}
+
+#simplified_accounting {
+    background-image: url('/assets/homepage_solutions_slide/simplified_accounting.png');
+    filter: brightness(0.82);
+}
+
+#tech_support {
+    background-image: url('/assets/homepage_solutions_slide/business_tech_support.png');
+    filter: brightness(0.82);
+}
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
+
+.card-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card-container::before {
+  content: "";
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.card .img-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transition: scale 0.6s, rotate 0.6s, filter 1s;
+}
+
+.card .img-content svg {
+  width: 50px;
+  height: 50px;
+  fill: #212121;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #e8e8e8;
+  padding: 20px 24px;
+  line-height: 1.5;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover .img-content {
+  scale: 2.5;
+  rotate: 30deg;
+  filter: blur(7px);
+}
+
+.card:hover .img-content svg {
+  fill: transparent;
+}
+
+.homepage_section{
+  padding: 3rem;
+}
+
+  </style>
+
 </head>
-<body>
-  
+<body>     
+    
+    <ul class="homepage_container">
+      <li class="homepage_section">
+        <div class="intro">
+          <ul class="intro_banner">
+            <li class="intro_image">
+
+            </li>
+            <li class="welcome_text">
+
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="homepage_section">
+        <div class="about_us">
+
+        </div>
+      </li>
+      <li class="homepage_section">
+        <div class="our_values">
+            <ul class="values">
+              <li class="value_container">
+                <div class="card-container">
+                  <div class="card">
+                    <div class="img-content">
+                    </div>
+                    <div class="content">
+                      <p class="heading">Card Hover</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipii
+                        voluptas ten mollitia pariatur odit, ab
+                        minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                        necessitatibus dignissimos molestias.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </li>
+      <li class="homepage_section">
+        <div class="our_solutions">
+          <div class="advanced_features_slide">
+
+            <div class="slides">
+    
+              <div class="slide_container" id="ecofriendly">
+                <div class="slide_content">
+                    <div class="feature_name">Eco-Friendly</div>
+                    <div class="description">Go Green, Go Digital! Join the Movement for Environmental Sustainability. Our Revolutionary Solution Reduces Paper Receipt Usage, Promoting a Healthier Planet. Embrace Eco-Friendly Practices in Your Business Today.</div>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide_container" id="customer_spending_analytics">
+                <div class="slide_content">
+                    <div class="feature_name">Customer Data Analytics & Insights</div>
+                    <div class="description">Unlock the Power of Data! Our Innovative System Provides Valuable Insights into Consumer Spending Patterns and Preferences. Make Informed Decisions, Tailor Your Services, and Stay Ahead of the Market Trends.</div>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide_container" id="inventory_tracking">
+                <div class="slide_content">
+                    <div class="feature_name">Inventory Tracking</div>
+                    <div class="description">Optimize Your Inventory Management! Our Sophisticated Tools Offer Real-Time Monitoring and Efficient Control of Inventory Levels. Say Goodbye to Overstocking and Stockouts. Elevate Your Operational Efficiency Today.</div>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide_container" id="best_selling_products">
+                <div class="slide_content">
+                    <div class="feature_name">Best Selling Products Analysis</div>
+                    <div class="description">Discover Your Best Sellers! Our Advanced System Identifies Top-Performing Products, Guiding Your Inventory and Marketing Decisions. Make Smart Choices, Boost Sales, and Stay Ahead of the Curve.</div>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide_container" id="customer_demographic_analytics">
+                <div class="slide_content">
+                    <div class="feature_name">Customer Demographics Analysis</div>
+                    <div class="description">Know Your Customers Inside Out! Our Solution Offers Crucial Insights into Demographics, Including Age, Gender, and Buying Habits. Tailor Your Approach, Create Targeted Campaigns, and Elevate Customer Experience.</div>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide_container" id="peak_business_times">
+                <div class="slide_content">
+                    <div class="feature_name">Peak Business Periods</div>
+                    <div class="description">Master Your Business Timing! Our Tool Helps Identify Peak Business Times, Enabling Optimal Staffing and Stock Planning. Prepare Effectively, Enhance Customer Service, and Maximize Efficiency.</div>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide_container" id="simplified_accounting">
+                <div class="slide_content">
+                    <div class="feature_name">Simplified Accounting</div>
+                    <div class="description">Simplify Your Transactions and Accounting! Experience Effortless Management with Our Streamlined Solution. Say Goodbye to Complicated Processes and Welcome a New Era of Efficiency and Accuracy.</div>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide_container" id="tech_support">
+                <div class="slide_content">
+                    <div class="feature_name">Tech Support</div>
+                    <div class="description">Uninterrupted Technical Support, Always at Your Service! Our Dedicated Team Ensures Your Modules and Software Run Smoothly, Giving You Peace of Mind. Experience Continuous, Reliable Support.</div>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            
+    
+            </div>
+    
+            <div class="button">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+    
+        </div>
+        </div>
+      </li>
+    </ul>
+
+    <script>
+
+let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.slide_container')
+    document.querySelector('.slides').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.slide_container')
+    document.querySelector('.slides').prepend(items[items.length - 1]) // here the length of items = 6
+})
+
+    </script>
 </body>
 </html>
