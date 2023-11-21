@@ -333,16 +333,36 @@ ul {
   color: white;
 }
 
-.solutions_sample_list li {
-  background: linear-gradient(to left, rgb(0, 26, 71), rgb(3, 71, 76));
+.solutions_card {
+  background: linear-gradient(to left, rgb(36, 74, 140), rgb(98, 13, 38));
   padding: 1rem;
   border-radius: 1rem;
-  width: 30rem;
-  height: 10rem;
+  width: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: space-between; /* Space items evenly horizontally */
 }
+
+.solutions_card h1 {
+  padding-top: 3rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+
+.solutions_section_title {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 3000;
+}
+
+.solutions_graphic {
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+}
+
 /* ======================================================================================================================================================================================================================================== */
 /* ALL CSS FOR LOGIN/SIGNUP PAGE */
 

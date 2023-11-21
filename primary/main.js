@@ -83,11 +83,3 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
-
-  // JavaScript to add the 'fade-in' class after a delay
-  document.addEventListener('DOMContentLoaded', function() {
-    const h1Element = document.querySelector('h1');
-    setTimeout(function() {
-      h1Element.classList.add('fade-in');
-    }, 1000); // Add the class after 1 second (adjust the delay as needed)
-  });
