@@ -51,11 +51,14 @@
       }
 
       #email {
-        color: darkblue;
         text-align: center;
         font-family: sans-serif;
         padding: 1rem;
       }
+
+      a[href^="mailto:"]{color: darkblue;}
+      
+      a[href^="mailto:"]:hover{color: rgb(128, 112, 252);}
 
       h1 {
         color: rgb(128, 112, 252);
@@ -111,7 +114,32 @@
       .our_team {
         padding: 5rem;
       }
+<<<<<<< HEAD
+      body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: rgb(175, 101, 28); 
+      filter: blur(30px);
+      scroll-behavior: smooth;
+      height: 150vh; 
+        }
+
+        #scrollUp, #scrollDown {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+    .value_title {
+=======
       .value_title {
+>>>>>>> b9909b2b4f015709e6be9f822f6b01aedbfb6b43
       font-family: 'Futura', sans-serif;
       font-weight: 300;
       color: white;
@@ -121,14 +149,36 @@
       text-shadow: 20px;
     }
     .under {
+<<<<<<< HEAD
+  width: 100%;
+=======
+<<<<<<< HEAD
+      
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(56, 174, 200), rgb(10, 227, 212));
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+
+=======
       width: 100%;
+>>>>>>> f8dcecc284d0fdd7f80646cdea88d5e18357e87a
   height: 100%;
-  background-image: radial-gradient(circle, orange, transparent 20%, orangered);
+  background: linear-gradient(to right, rgb(56, 174, 200), rgb(10, 227, 212));
+  
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: orange;
   border-radius: 20px;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b9909b2b4f015709e6be9f822f6b01aedbfb6b43
+>>>>>>> f8dcecc284d0fdd7f80646cdea88d5e18357e87a
  
     .value_title_{
       font-family: 'Futura', sans-serif;
@@ -150,12 +200,36 @@
     .value_container {
       display: flex;
       justify-content: space-around;
+<<<<<<< HEAD
+      
+=======
+<<<<<<< HEAD
+      
+=======
       padding: 20px 0;
+>>>>>>> b9909b2b4f015709e6be9f822f6b01aedbfb6b43
+>>>>>>> f8dcecc284d0fdd7f80646cdea88d5e18357e87a
       margin-left: 10px;
       margin-right: 10px;
     }
     .value_main{
       
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f8dcecc284d0fdd7f80646cdea88d5e18357e87a
+      display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #51b5dc;
+  
+}
+<<<<<<< HEAD
+=======
+=======
       justify-content: space-around;
       padding: 20px 0;
       margin-left: 10px;
@@ -184,6 +258,8 @@
 
     
 
+>>>>>>> b9909b2b4f015709e6be9f822f6b01aedbfb6b43
+>>>>>>> f8dcecc284d0fdd7f80646cdea88d5e18357e87a
     .value_company {
       flex: 1;
       display: flex;
@@ -427,9 +503,9 @@
                             height="300"
                             width="300"
                           />
-                          <h3>Oussama</h3>
+                          <h3>Oussama Boukhatem</h3>
                           <p class="title">Chief operating officer (COO)</p>
-                          <p id="email">example@example.com</p>
+                          <p id="email"><a href="mailto:obouk069@uOttawa.ca">obouk069@uOttawa.ca</a></p>
                         </div>
                       </div>
                   
@@ -441,9 +517,9 @@
                             height="300"
                             width="300"
                           />
-                          <h3>Seba</h3>
+                          <h3>Seba Raei</h3>
                           <p class="title">Chief financial officer or controller (CFO)</p>
-                          <p id="email">example@example.com</p>
+                          <p id="email"><a href="mailto:sraei088@uOttawa.ca">sraei088@uOttawa.ca</a></p>
                         </div>
                   
                         <div id="outer_container">
@@ -453,9 +529,9 @@
                             height="300"
                             width="300"
                           />
-                          <h3>Toshanee</h3>
+                          <h3>Toshanee Sookha</h3>
                           <p class="title">Chief marketing officer (CMO)</p>
-                          <p id="email">example@example.com</p>
+                          <p id="email"><a href="mailto:tsook025@uOttawa.ca">tsook025@uOttawa.ca</a></p>
                         </div>
                   
                         <div id="outer_container">
@@ -465,9 +541,9 @@
                             height="300"
                             width="300"
                           />
-                          <h3>Amani</h3>
+                          <h3>Amani Idi</h3>
                           <p class="title">Chief technology officer (CTO)</p>
-                          <p id="email">example@example.com</p>
+                          <p id="email"><a href="mailto:aidi069@uOttawa.ca">aidi069@uOttawa.ca</a></p>
                         </div>
                       </div>
                 </div>
