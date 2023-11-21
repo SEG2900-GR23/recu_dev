@@ -117,11 +117,22 @@ ul {
   background: white;
   border-radius: 2rem;
   padding: 0.5rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: whitesmoke;
 }
 
 .footer_button_container {
   padding-bottom: 0.7rem;
   text-align: center;
+  text-decoration: none;
 }
 
 .footer_redirect {
@@ -136,6 +147,7 @@ ul {
   font-weight: 2000;
   border: 5px solid rgb(78, 73, 206);
   background: white;
+  text-decoration: none;
 }
 
 .footer_card li button:hover {
