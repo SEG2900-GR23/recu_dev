@@ -51,3 +51,43 @@ function demo_redirect() {
 function login_redirect() {
     window.location.href = 'WEB-APP-log.html';
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+      
+    var readMoreButton = document.querySelector('.button');
+    var hiddenElements = document.querySelectorAll('.importance,.value_title_importance_');
+
+   
+    hiddenElements.forEach(function (element) {
+      element.style.display = 'none';
+    });
+
+   
+    readMoreButton.addEventListener('click', function () {
+      
+      hiddenElements.forEach(function (element) {
+        element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+      });
+
+     
+      if (hiddenElements[0].style.display === 'block') {
+        animateElements(hiddenElements);
+      }
+    });
+
+    function animateElements(elements) {
+      elements.forEach(function (element, index) {
+        setTimeout(function () {
+          element.style.opacity = 1;
+        }, index * 500); 
+      });
+    }
+  });
+
+  // JavaScript to add the 'fade-in' class after a delay
+  document.addEventListener('DOMContentLoaded', function() {
+    const h1Element = document.querySelector('h1');
+    setTimeout(function() {
+      h1Element.classList.add('fade-in');
+    }, 1000); // Add the class after 1 second (adjust the delay as needed)
+  });
