@@ -1,5 +1,5 @@
 /* ======================================================================================================================================================================================================================================== */
-/* Style Guide for RECEIPTIFY - Roomie */
+/* Style Guide for RECEIPTIFY -  */
 
 /* Overall Look and Feel */
 /* Minimalist and flat design. No 3D buttons or metal looks. Calm and gentle user experience. */
