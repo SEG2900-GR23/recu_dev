@@ -1,62 +1,79 @@
-# Style Guide for Roomie
+/* ======================================================================================================================================================================================================================================== */
+/* Style Guide for RECEIPTIFY - Roomie */
 
-## Overall Look and Feel of Roomie
-The overall look and feel should be minimalist and flat. We will avoid 3D buttons and 3D metal looks. The website should be calm and gentle for the user.
+/* Overall Look and Feel */
+/* Minimalist and flat design. No 3D buttons or metal looks. Calm and gentle user experience. */
 
-## Colours
-For Roomie, colours expose our personality to the customers and represent that we are calm and pleasing. These are our color swatches:
+/* ======================================================================================================================================================================================================================================== */
+/* Colour Scheme */
 
-- #583E7F
-- #DEC9FF
-- #B07CFF
-- #6F647F
-- #8D63CC
+:root {
+  --primary-color: #6096B4;
+  --secondary-color: #93BFCF;
+  --tertiary-color: #BDCDD6;
+  --text-color: #6096B4;
+  --background-color: #EEE9DA;
+  --accent-color: #F69E7B;
+  --hover-accent: #D2E9E93;
+  --hover-accent-text: #54259;
+}
 
-## Iconography
-We will focus on using icons that have a 'flat' design, which adheres to the overall look and feel. When selecting an icon, please select the correct icon for the job and keep the following in mind:
+/* ======================================================================================================================================================================================================================================== */
+/* Typography */
 
-## Typography
-We will be using Roboto from Google Fonts.
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 
-## Links
-Links will not be underlined and should change color when a user hovers over it.
+body {
+  font-family: "Raleway", sans-serif;
+}
 
-## Buttons
-Buttons will be flat designed using the chosen colors outlined above.
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+}
 
----
+code {
+  font-family: "JetBrains Mono", monospace;
+}
 
-# CONSTANTS
+/* ======================================================================================================================================================================================================================================== */
+/* Iconography */
 
-## Main Color Profile (Color Codes):
+/* Icons should be flat in design, adhering to the overall style. Use appropriate icons for context. */
 
-- Main color shades:
-  - 6096B4
-  - 93BFCF
-  - BDCDD6
+/* ======================================================================================================================================================================================================================================== */
+/* Links */
 
-- Text color: 6096B4
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 
-- Background: EEE9DA
+a:hover {
+  color: var(--accent-color);
+}
 
-- Accent color: F69E7B
+/* ======================================================================================================================================================================================================================================== */
+/* Buttons */
 
-- Hover accent: D2E9E93
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  transition: background-color 0.3s ease;
+}
 
-- Hover accent text: 54259
+button:hover {
+  background-color: var(--accent-color);
+}
 
-## Typography Constants:
+/* ======================================================================================================================================================================================================================================== */
+/* Additional Styles */
 
-- Title Font: [Montserrat](https://fonts.google.com/specimen/Montserrat?query=mont)
-- Paragraph Font: [Raleway](https://fonts.google.com/specimen/Raleway?query=rale)
-- Subparagraph Font: [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono?query=phili)
+/* Add specific styles for different sections of the website here, ensuring they align with the new color scheme and typography. */
 
-## ASSETS
-
-### Icon Constants:
-
-If your project uses icons, define a set of icon names or codes along with their corresponding SVG or font icon representations. This simplifies the process of adding icons to your project.
-
-### Logos:
-
-[Google Icons](https://fonts.google.com/icons)
+/* ======================================================================================================================================================================================================================================== */
