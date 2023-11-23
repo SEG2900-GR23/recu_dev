@@ -1,4 +1,4 @@
-# recu.github.io
+# https://seg2900-gr23.github.io/recu_dev/
 
 SEG2900 - Web StartUp Project - Entrepreneurship - Competition
 
