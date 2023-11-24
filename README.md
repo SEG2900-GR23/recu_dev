@@ -1,5 +1,8 @@
+<<<<<<< Updated upstream
 # https://seg2900-gr23.github.io/recu_dev/
 
+=======
+>>>>>>> Stashed changes
 SEG2900 - Web StartUp Project - Entrepreneurship - Competition
 
 Team Name: Recu
