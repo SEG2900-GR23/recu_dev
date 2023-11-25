@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+       {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Raleway", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        min-width: 100vh;
+        background: linear-gradient(
+          to top,
+          rgb(58, 1, 20, 0.8),
+          rgb(0, 0, 44, 0.8),
+          rgb(0, 44, 32, 0.8)
+        );
+      }
+
+      img {
+        border-style: var(circle);
+        border-width: 5px;
+        clip-path: circle();
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+      #container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #container_other {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #outer_container {
+        background: linear-gradient(to top, aquamarine, rgb(128, 112, 252));
+        border: 10px solid white;
+        border-radius: 50px;
+        width: 350px;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        margin-right: 50px;
+        float: left;
+      }
+
+      .title {
+        color: darkblue;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+
+      #email {
+        text-align: center;
+        font-family: sans-serif;
+        padding: 1rem;
+      }
+
+      a[href^="mailto:"] {
+        color: darkblue;
+      }
+
+      a[href^="mailto:"]:hover {
+        color: rgb(128, 112, 252);
+        text-shadow: 2px 4px 6px white;
+      }
+
+      h1 {
+        color: rgb(128, 112, 252);
+        text-align: center;
+        font-family: sans-serif;
+        padding: 2rem;
+        border: 10px solid rgb(128, 112, 252);
+        border-radius: 50px;
+        background: white;
+        width: 370px;
+        height: 40px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        margin-right: 50px;
+      }
+
+      #team_page_header {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 1rem;
+        margin-left: 60px;
+        margin-right: 60px;
+        border: 10px solid white;
+        border-radius: 50px;
+        background: rgb(128, 112, 252);
+        width: 1200px;
+        height: 80px;
+      }
+
+      #team_description {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      }
+
+      h3 {
+        color: darkblue;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 1rem;
+      }
+
+      .our_team {
+        padding: 5rem;
+      }
+
+      #three_contacts {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="our_team">
+      <div id="team_page_header">
+        <h1>MEET OUR TEAM</h1>
+      </div>
+
+      <div id="team_description">
+        <h2>
+          Meet our dynamic team of passionate professionals dedicated to driving
+          innovation and achieving excellence. With diverse skills and a shared
+          commitment to success, we collaborate seamlessly to turn ideas into
+          impactful solutions.
+        </h2>
+      </div>
+
+      <div id="container">
+        <div id="outer_container">
+          <img
+            src="/assets/receiptify_logo.png"
+            alt="Name"
+            height="300"
+            width="300"
+          />
+          <h3>Ashiq Arib Gazi</h3>
+          <p class="title">Co-founder</p>
+          <p id="email">
+            <a href="mailto:agazi064@uOttawa.ca">agazi064@uOttawa.ca</a>
+          </p>
+        </div>
+
+        <div id="outer_container">
+          <img
+            src="/assets/receiptify_logo.png"
+            alt="Name"
+            height="300"
+            width="300"
+          />
+          <h3>Oussama Boukhatem</h3>
+          <p class="title">Co-founder</p>
+          <p id="email">
+            <a href="mailto:obouk069@uOttawa.ca">obouk069@uOttawa.ca</a>
+          </p>
+            <div id="three_contacts">
+                <img
+                src="assets\contact logos\outlook_logo.png"
+                alt="Name"
+                height="50"
+                width="50"
+                />
+
+                <img
+                src="/assets/receiptify_logo.png"
+                alt="Name"
+                height="50"
+                width="50"
+                />
+
+                <img
+                src="/assets/receiptify_logo.png"
+                alt="Name"
+                height="50"
+                width="50"
+                />
+            </div>
+        </div>
+
+        <div id="outer_container">
+          <img
+            src="/assets/receiptify_logo.png"
+            alt="Name"
+            height="300"
+            width="300"
+          />
+          <h3>Seba Raei</h3>
+          <p class="title">Co-founder</p>
+          <p id="email">
+            <a href="mailto:sraei088@uOttawa.ca">sraei088@uOttawa.ca</a>
+          </p>
+        </div>
+      </div>
+
+      <div id="container_other">
+        <div id="outer_container">
+          <img
+            src="/assets/receiptify_logo.png"
+            alt="Name"
+            height="300"
+            width="300"
+          />
+          <h3>Toshanee Sookha</h3>
+          <p class="title">Co-founder</p>
+          <p id="email">
+            <a href="mailto:tsook025@uOttawa.ca">tsook025@uOttawa.ca</a>
+          </p>
+        </div>
+
+        <div id="outer_container">
+          <img
+            src="/assets/receiptify_logo.png"
+            alt="Name"
+            height="300"
+            width="300"
+          />
+          <h3>Amani Idi</h3>
+          <p class="title">Co-founder</p>
+          <p id="email">
+            <a href="mailto:aidi069@uOttawa.ca">aidi069@uOttawa.ca</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
